@@ -22,52 +22,23 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+CI/CD Pipeline for NestJS Application 🚀
+This repository contains the CI/CD pipeline configuration for a NestJS application using GitHub Actions. The pipeline automates the deployment process and allows manual stopping of the application.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Workflows
+CI Workflow ⚙️
+Automatically builds, tests, and deploys the application to an EC2 instance when changes are pushed to the main branch or manually triggered.
 
-## Installation
+Stop Application Workflow 🛑
+Manually stops the application running on the EC2 instance using pm2.
 
-```bash
-$ npm install
-```
+Setup Instructions
+Add Secrets 🔑
 
-## Running the app
+EC2_HOST: Public IP address of your EC2 instance.
+EC2_USER: SSH username (e.g., ubuntu).
+EC2_KEY: Private key for SSH access (contents of the .pem file).
+Trigger Workflows 🚀
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+CI Workflow: Push changes to main or trigger manually.
+Stop Application Workflow: Trigger manually to stop the application.
