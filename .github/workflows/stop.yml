@@ -1,0 +1,20 @@
+name: Stop NestJS App on EC2
+
+on:
+  workflow_dispatch:
+  # You can add more triggers like push or pull_request if needed
+
+jobs:
+  stop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Stop NestJS App
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            pm2 stop hello-world
+            pm2 save
