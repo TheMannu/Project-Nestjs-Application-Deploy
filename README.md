@@ -49,10 +49,7 @@ Manually stops the application running on the EC2 instance .
 
 ## Resources 📚
 
-
-
-
-- **Screencast**: [Video Link](C:\Users\win10\Documents\ShareX\Screenshots\2024-06\biu0rURMll.mp4)
+- **Screencast**: ()
 
 Feel free to contribute or raise issues if you encounter any problems! 😊
 
