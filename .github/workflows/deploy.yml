@@ -24,10 +24,10 @@ jobs:
     - name: Build the project
       run: npm run build
       
-    - name: Debug: List files in current directory
+    - name: Debug List files in current directory
       run: ls -al
 
-    - name: Debug: Display environment variables
+    - name: Debug Display environment variables
       run: env
       
     - name: Deploy to EC2
