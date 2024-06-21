@@ -22,23 +22,37 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-CI/CD Pipeline for NestJS Application 🚀
+# CI/CD Pipeline for NestJS Application 🚀
+
 This repository contains the CI/CD pipeline configuration for a NestJS application using GitHub Actions. The pipeline automates the deployment process and allows manual stopping of the application.
 
-Workflows
-CI Workflow ⚙️
-Automatically builds, tests, and deploys the application to an EC2 instance when changes are pushed to the main branch or manually triggered.
+## Workflows
 
-Stop Application Workflow 🛑
-Manually stops the application running on the EC2 instance using pm2.
+### CI Workflow ⚙️
 
-Setup Instructions
-Add Secrets 🔑
+Automatically builds, tests, and deploys the application to an EC2 instance when changes are pushed to the `main` branch or manually triggered.
 
-EC2_HOST: Public IP address of your EC2 instance.
-EC2_USER: SSH username (e.g., ubuntu).
-EC2_KEY: Private key for SSH access (contents of the .pem file).
-Trigger Workflows 🚀
+### Stop Application Workflow 🛑
 
-CI Workflow: Push changes to main or trigger manually.
-Stop Application Workflow: Trigger manually to stop the application.
+Manually stops the application running on the EC2 instance .
+
+## Setup Instructions
+
+1. **Add Secrets** 🔑
+   - `EC2_HOST`: Public IP address of your EC2 instance.
+   - `EC2_USER`: SSH username (e.g., `ubuntu`).
+   - `EC2_KEY`: Private key for SSH access (contents of the `.pem` file).
+
+2. **Trigger Workflows** 🚀
+   - **CI Workflow**: Push changes to `main` or trigger manually.
+   - **Stop Application Workflow**: Trigger manually to stop the application.
+
+## Resources 📚
+
+
+
+
+- **Screencast**: [Video Link](C:\Users\win10\Documents\ShareX\Screenshots\2024-06\biu0rURMll.mp4)
+
+Feel free to contribute or raise issues if you encounter any problems! 😊
+
