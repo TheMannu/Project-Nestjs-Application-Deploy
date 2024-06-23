@@ -49,7 +49,7 @@ Manually stops the application running on the EC2 instance .
 
 ## Resources 📚
 
-- **Screencast**:![Video](https://github.com/TheMannu/Project-Nestjs-app-01-task/blob/main/21.06.2024_19.20.40_REC.mp4)
+- **Screencast**:[Video](https://github.com/TheMannu/Project-Nestjs-app-01-task/blob/main/21.06.2024_19.20.40_REC.mp4)
 
 Feel free to contribute or raise issues if you encounter any problems! 😊
 
